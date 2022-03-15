@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+  </head>
+  <body>
+    <div class="everything">
+      <div id="time" class="time"></div>
+      <form action="https://gowogle.voring.me/search" method="GET">
+        <input
+          autofocus
+          name="q"
+          class="search"
+          type="search"
+          id="search-bar-input"
+          placeholder=""
+        />
+      </form>
+      <div class="box">
+        <div class="link">
+          <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://youtube.com">youtube</a></li>
+            <li><a href="https://github.com">github</a></li>
+            <li><a href="https://netflix.com">netflix</a></li>
+            <li><a href="https://spotify.com">spotify</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="https://pahe.li">Pahe</a></li>
+            <li><a href="https://drivenime.com">Drivenime</a></li>
+            <li><a href="https://juragan-anime.net">Juragan Anime</a></li>
+            <li><a href="https://iq.com">IQIYI</a></li>
+            <li><a href="https://subscene.icu">Subscene</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="https://eimusics.com">EIMUSICS</a></li>
+            <li><a href="https://jpflac.com">JPFlac</a></li>
+            <li><a href="https://sukideost.info">SukideOst</a></li>
+            <li>
+              <a href="https://hikarinoakariost.info">HikarinoAkariOst</a>
+            </li>
+          </ul>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="https://siberuang.com">Siberuang</a></li>
+            <li><a href="https://fitgirl-repacks.site">Fitgirl</a></li>
+          </ul>
+        </div>
+        <!-- Feel free to add more divs here -->
+      </div>
+    </div>
+    <script>
+      function updateClock() {
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let ampm = hours >= 12 ? "pm" : "am";
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        let time = hours + ":" + minutes + " " + ampm;
+        document.getElementById("time").innerHTML = time;
+        setTimeout(updateClock, 1000);
+      }
+
+      updateClock();
+    </script>
+  </body>
+</html>
