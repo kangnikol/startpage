@@ -26,6 +26,3 @@
 
 - [ThatOneCalculator](https://github.com/thatonecalculator)
 - [okaabe](https://github.com/okaabe)
-# startpage
-# startpage
-# startpage
