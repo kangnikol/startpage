@@ -40,12 +40,14 @@ body {
 }
 
 .link {
-  display: inline-block;
+  display: flex;
   margin: 1%;
   height: auto;
-  width: 140px;
-  text-align: left;
-  padding-left: 3%;
+  width: 150px;
+  justify-content: center;
+  align-items: space-between;
+  text-align: center;
+  padding: 0 2%;
   background-color: var(--bgcolor);
   border-radius: 8px;
   box-shadow: 2px 2px 8px #000000;
